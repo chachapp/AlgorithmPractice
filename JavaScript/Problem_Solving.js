@@ -22,8 +22,8 @@ function charCount(str) {
     // make object to return at end
     var result = {};
     // loop over string, for each character... 
-    for (var i = 0; i < str.length; i++) {
-        var char = str[i].toLowerCase();
+    for (var i = 0; i < str.length; i++) { // => for or 루프로 변경할 수 있다.
+        var char = str[i].toLowerCase(); // => 정규표현식으로 리팩토링 할 수 있다.
             result[char]++;
         if (result[char] > 0) {
             result[char] = 1;
