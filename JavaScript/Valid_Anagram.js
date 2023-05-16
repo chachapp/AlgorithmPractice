@@ -24,8 +24,6 @@ function validAnagram(str1, str2) {
   console.log(frequencyCounter1);
   console.log(frequencyCounter2);
 
-  // 배열로 변환헤서 Object.values를 이용하고 includes로 비교하기
-  // a : 2 가 맞아야함. 
   for (let key in frequencyCounter1) {
     if (!frequencyCounter1.hasOwnProperty(key)) {
         return false;
@@ -35,14 +33,9 @@ function validAnagram(str1, str2) {
         return false;
     }
 
-    
-
     if (frequencyCounter1[key] !== frequencyCounter2[key]) {
         return false;
     }
-
-    
-    
   }
 
   return true;
